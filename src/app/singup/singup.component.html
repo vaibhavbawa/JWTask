@@ -1,0 +1,22 @@
+<!-- <p>singup works!</p> -->
+
+<section>
+    <div class="container">
+        <form action="" (submit)="onSignup()" >
+            <h1>SingUp form</h1>
+                <div class="form-group">
+                  <b><label for="username">Email Id</label></b>
+                  <input type="text" class="form-control" id="username" [(ngModel)]="username" >
+                </div>
+                <div class="form-group">
+                  <b><label for="password">Password</label></b>
+                  <input type="password" class="form-control" id="password" [(ngModel)]="password" >
+                </div>
+                <input type="submit" class="btn" value="Login">
+                <div style="float: right;" class="my-5">
+                  <a [routerLink]="'./singup'" style="color: black;">Existing User! SingUp</a>
+                </div>
+
+        </form>
+    </div>
+    </section>
